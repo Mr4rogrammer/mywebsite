@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MrAnalytics Documentation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/MrAnalytics.css" rel="stylesheet" />
+
+   
+  </head>
+  <body>
+    <div class="MainClass">
+      <div class="MainNav">
+        <div class="Nav">
+          <div class="TopNav">
+            <p class="Title">Mr.Analytics</p>
+            <p class="byTag">by Mr.Programmer</p>
+          </div>
+        </div>
+        <div>
+          <p class="BuildBetterApps">Build Better Apps,Faster.</p>
+          <p class="BuildMessage">
+            MrAnalytics is a fast, real-time exception handler for android application and updates in both web and
+            app-based dashboard.
+          </p>
+          <div class="centerFlex">
+            <a href="#" class="buttonDownload">Library</a>
+            <a href="#" class="webBtn">Website</a>
+            <a href="#" class="buttonDownload">Mobile App</a>
+          </div>
+          <br /><br />
+        </div>
+        <div class="custom-shape-divider-top-1664679849">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="Content">
+        <p class="whyMr">why use Mr.Analytics?</p>
+        <div class="Grid3x">
+          <div class="GridChild1x">
+            <div class="GridChildinner">
+              <img class="GridChildicon" src="icon/tick.png" />
+              <p class="GridChildTitle">Fast and lightweight</p>
+            </div>
+            <div class="GridContentDiv">
+              <p class="text">
+                Handle every exception without missing any one of them.
+              </p>
+            </div>
+          </div>
+          <div class="GridChild1x">
+            <div class="GridChildinner">
+              <img class="GridChildicon" src="icon/tick.png" />
+              <p class="GridChildTitle">Multiple DashBoard</p>
+            </div>
+            <div class="GridContentDiv">
+              <div class="GridContentDiv">
+                <p class="text">
+                  Get a dashboard in both Android and Web based application.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="GridChild1x">
+            <div class="GridChildinner">
+              <img class="GridChildicon" src="icon/tick.png" />
+              <p class="GridChildTitle">Built-in mobile to cloud sync</p>
+            </div>
+            <div class="GridContentDiv">
+              <div class="GridContentDiv">
+                <p class="text">
+                  Get updates of each and every exception in less than a sec in
+                  the dashboard.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="space"></div>
+        <p class="titleDocumentation">Documentation</p><br><br>
+        
+
+
+        <div class="wrapper">
+          <p class="text">Initialization of the MrAnalytics class with email and key from dashboard. (in MainApplication)</p>
+          <p class="code">MrAnalytics.init(getApplicationContext(),"tn36king@gmail.com","7548882167");</p>
+        </div>
+
+
+        <div class="wrapper">
+          <p class="text">Use the InBuild function to Handle overall application exception. (in MainApplication)</p>
+          <p class="code">MrAnalytics.RunExceptionHandler();</p>
+        </div>
+
+        <div class="wrapper">
+          <p class="text">Use the InBuild function to Handle try catch exception. (in each file)</p>
+          <p class="code">catch (e: Exception) {MrAnalytics.ReturnCatchError(e.localizedMessage,e.message,"MainActivity",this);
+        }</p>
+       
+        </div>
+
+        <div class="wrapper">
+          <p class="text">Use the InBuild Handler to get the Result. (in each file)</p>
+          <p class="code">class MainActivity : AppCompatActivity(),MrAnalytics.CompleteHandler{}</p>
+       
+            <p class="code">  override fun onSuccess(Message: String?) { TODO(" Your Code here") }</p>
+     
+              <p class="code"> override fun onFailure(e: String?) { TODO(" Not yet implemented ") }</p>
+          
+        </div>
+
+        <div>
+         
+        </div>
+
+        <div class="footer">
+          
+          
+         <p> &copy; 2022<strong> Mr.Programmer</strong>.</p>
+    
+        </div>
+      </div>
+    </div>
+    
+
+    
+
+    
+  </body>
+
+ 
+</html>
