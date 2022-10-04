@@ -4,7 +4,7 @@
     <title>MrAnalytics Documentation</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="mranalytics/css/MrAnalytics.css" rel="stylesheet" />
+    <link href="css/MrAnalytics.css" rel="stylesheet" />
 
    
   </head>
@@ -24,9 +24,9 @@
             app-based dashboard.
           </p>
           <div class="centerFlex">
-            <a href="#" class="buttonDownload">Library</a>
+           
             <a href="#" class="webBtn">Website</a>
-            <a href="#" class="buttonDownload">Mobile App</a>
+            <a href="#" class="webBtn">Mobile App</a>
           </div>
           <br /><br />
         </div>
@@ -50,7 +50,7 @@
         <div class="Grid3x">
           <div class="GridChild1x">
             <div class="GridChildinner">
-              <img class="GridChildicon" src="mranalytics/icon/tick.png" />
+              <img class="GridChildicon" src="icon/tick.png" />
               <p class="GridChildTitle">Fast and lightweight</p>
             </div>
             <div class="GridContentDiv">
@@ -61,7 +61,7 @@
           </div>
           <div class="GridChild1x">
             <div class="GridChildinner">
-              <img class="GridChildicon" src="mranalytics/icon/tick.png" />
+              <img class="GridChildicon" src="icon/tick.png" />
               <p class="GridChildTitle">Multiple DashBoard</p>
             </div>
             <div class="GridContentDiv">
@@ -74,7 +74,7 @@
           </div>
           <div class="GridChild1x">
             <div class="GridChildinner">
-              <img class="GridChildicon" src="mranalytics/icon/tick.png" />
+              <img class="GridChildicon" src="icon/tick.png" />
               <p class="GridChildTitle">Built-in mobile to cloud sync</p>
             </div>
             <div class="GridContentDiv">
@@ -92,6 +92,23 @@
         <div class="space"></div>
         <p class="titleDocumentation">Documentation</p><br><br>
         
+
+        <div class="wrapper">
+          <p class="text">Add it in your root build.gradle at the end of repositories:</p>
+          <p class="code">
+            allprojects {
+              repositories {
+                ...
+                maven { url 'https://jitpack.io' }
+              }
+            }</p>
+        </div>
+
+        <div class="wrapper">
+          <p class="text">Add the dependency</p>
+          <p class="code">implementation 'com.github.krish11022002:Mr.Analytics:V3.0.0'</p>
+        </div>
+
 
 
         <div class="wrapper">
