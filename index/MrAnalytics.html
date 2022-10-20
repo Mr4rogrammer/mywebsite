@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/MrAnalytics.css" rel="stylesheet" />
-
-   
   </head>
+
+
   <body>
     <div class="MainClass">
       <div class="MainNav">
@@ -20,12 +20,11 @@
         <div>
           <p class="BuildBetterApps">Build Better Apps,Faster.</p>
           <p class="BuildMessage">
-            MrAnalytics is a fast, real-time exception handler for android application and updates in both web and
-            app-based dashboard.
+            MrAnalytics is a fast, real-time exception handler for android
+            application and updates in both web and app-based dashboard.
           </p>
           <div class="centerFlex">
-           
-            <a href="#" class="webBtn">Website</a>
+            <a href="https://mr-analytics.netlify.app/" target="_blank" class="webBtn">Website</a>
             <a href="#" class="webBtn">Mobile App</a>
           </div>
           <br /><br />
@@ -44,119 +43,161 @@
           </svg>
         </div>
       </div>
-
-      <div class="Content">
-        <p class="whyMr">why use Mr.Analytics?</p>
-        <div class="Grid3x">
-          <div class="GridChild1x">
-            <div class="GridChildinner">
-              <img class="GridChildicon" src="icon/tick.png" />
-              <p class="GridChildTitle">Fast and lightweight</p>
-            </div>
-            <div class="GridContentDiv">
-              <p class="text">
-                Handle every exception without missing any one of them.
-              </p>
-            </div>
-          </div>
-          <div class="GridChild1x">
-            <div class="GridChildinner">
-              <img class="GridChildicon" src="icon/tick.png" />
-              <p class="GridChildTitle">Multiple DashBoard</p>
-            </div>
-            <div class="GridContentDiv">
-              <div class="GridContentDiv">
-                <p class="text">
-                  Get a dashboard in both Android and Web based application.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="GridChild1x">
-            <div class="GridChildinner">
-              <img class="GridChildicon" src="icon/tick.png" />
-              <p class="GridChildTitle">Built-in mobile to cloud sync</p>
-            </div>
-            <div class="GridContentDiv">
-              <div class="GridContentDiv">
-                <p class="text">
-                  Get updates of each and every exception in less than a sec in
-                  the dashboard.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="space"></div>
-        <p class="titleDocumentation">Documentation</p><br><br>
-        
-
-        <div class="wrapper">
-          <p class="text">Add it in your root build.gradle at the end of repositories:</p>
-          <p class="code">
-            allprojects {
-              repositories {
-                ...
-                maven { url 'https://jitpack.io' }
-              }
-            }</p>
-        </div>
-
-        <div class="wrapper">
-          <p class="text">Add the dependency</p>
-          <p class="code">implementation 'com.github.krish11022002:Mr.Analytics:V3.0.0'</p>
-        </div>
-
-
-
-        <div class="wrapper">
-          <p class="text">Initialization of the MrAnalytics class with email and key from dashboard. (in MainApplication)</p>
-          <p class="code">MrAnalytics.init(getApplicationContext(),"tn36king@gmail.com","7548882167");</p>
-        </div>
-
-
-        <div class="wrapper">
-          <p class="text">Use the InBuild function to Handle overall application exception. (in MainApplication)</p>
-          <p class="code">MrAnalytics.RunExceptionHandler();</p>
-        </div>
-
-        <div class="wrapper">
-          <p class="text">Use the InBuild function to Handle try catch exception. (in each file)</p>
-          <p class="code">catch (e: Exception) {MrAnalytics.ReturnCatchError(e.localizedMessage,e.message,"MainActivity",this);
-        }</p>
-       
-        </div>
-
-        <div class="wrapper">
-          <p class="text">Use the InBuild Handler to get the Result. (in each file)</p>
-          <p class="code">class MainActivity : AppCompatActivity(),MrAnalytics.CompleteHandler{}</p>
-       
-            <p class="code">  override fun onSuccess(Message: String?) { TODO(" Your Code here") }</p>
-     
-              <p class="code"> override fun onFailure(e: String?) { TODO(" Not yet implemented ") }</p>
-          
-        </div>
-
-        <div>
-         
-        </div>
-
-        <div class="footer">
-          
-          
-         <p> &copy; 2022<strong> Mr.Programmer</strong>.</p>
-    
-        </div>
-      </div>
     </div>
-    
+      <section>
+      <div class="Content">
+      
+          <p class="whyMr">why use Mr.Analytics?</p>
+          <div class="Grid3x">
+            <div class="GridChild1x">
+              <div class="GridChildinner">
+                <img class="GridChildicon" src="icon/tick.png" />
+                <p class="GridChildTitle">Fast and lightweight</p>
+              </div>
+              <div class="GridContentDiv">
+                <p class="text">
+                  Handle every exception without missing any one of them.
+                </p>
+              </div>
+            </div>
+            <div class="GridChild1x">
+              <div class="GridChildinner">
+                <img class="GridChildicon" src="icon/tick.png" />
+                <p class="GridChildTitle">Multiple DashBoard</p>
+              </div>
+              <div class="GridContentDiv">
+                <div class="GridContentDiv">
+                  <p class="text">
+                    Get a dashboard in both Android and Web based application.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="GridChild1x">
+              <div class="GridChildinner">
+                <img class="GridChildicon" src="icon/tick.png" />
+                <p class="GridChildTitle">Built-in mobile to cloud sync</p>
+              </div>
+              <div class="GridContentDiv">
+                <div class="GridContentDiv">
+                  <p class="text">
+                    Get updates of each and every exception in less than a sec
+                    in the dashboard.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        
+       
+   
+
+        <section >
+
+              <div class="documation">~ Documentation ~</div>
+
+          <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Add below code in project level build.gradle</p>
+             <div class="pre"> allprojects {<br/>&nbsp;repositories {<br/>
+              &nbsp;&nbsp; google()<br/>
+              &nbsp;&nbsp; mavenCentral()<br/>
+              &nbsp;&nbsp; maven { url 'https://jitpack.io' }<br/>
+              &nbsp; }<br/>
+          }</div>
+            </div>
+             
+           </div>
+
+          <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Initialization of Library in build.gradle</p>
+             <div class="pre">implementation 'com.github.krish11022002:Mr.Analytics:V3.0.0'</div>
+            </div>
+             
+           </div>
+
+          <div class="codeblock">
+           <div class="codecopy">
+            <p class="codetext">Initialization of the MrAnalytics class with email and key from dashboard. (in MainApplication)</p>
+            <div class="pre">class MainApplication : Application() {<br/>
+              &nbsp;override fun onCreate() {<br/>
+                &nbsp;&nbsp; super.onCreate()<br/>
+                &nbsp;&nbsp;&nbsp; MrAnalytics.init(applicationContext, "testmail@gmail.com", "202212215")<br/>
+                &nbsp;&nbsp; }<br/>
+          }</div>
+           </div>
+            
+          </div>
+
 
     
 
-    
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Use the InBuild function to Handle overall application exception. (in MainApplication)</p>
+             <div class="pre">class MainApplication : Application() {<br/>
+              &nbsp;override fun onCreate() {<br/>
+                &nbsp;&nbsp; super.onCreate()<br/>
+                &nbsp;&nbsp;&nbsp; MrAnalytics.init(applicationContext, "testmail@gmail.com", "202212215")<br/>
+                &nbsp;&nbsp;&nbsp;  MrAnalytics.RunExceptionHandler()<br/>
+                &nbsp;&nbsp; }<br/>
+
+               
+          }</div>
+            </div>
+           </div>
+
+
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Use the InBuild function to Handle try catch exception. (in each file)</p>
+             <div class="pre">catch (e: Exception) {<br/> &nbsp; &nbsp;MrAnalytics.ReturnCatchError(e.localizedMessage,e.message,"MainActivity",this);<br/> }</div>
+            </div>
+           </div>
+
+
+
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Use the InBuild Handler to get the Result. (in each file)</p>
+             <div class="pre">class MainActivity : AppCompatActivity(),MrAnalytics.CompleteHandler{<br/>
+
+              &nbsp; override fun onSuccess(Message: String?) {<br/> &nbsp; &nbsp; &nbsp; TODO(" Your Code here") <br/> &nbsp; &nbsp;}<br/>
+              
+              &nbsp; override fun onFailure(e: String?) {<br/> &nbsp; &nbsp; &nbsp; TODO(" Not yet implemented ") <br/> &nbsp; &nbsp;}<br/>
+            }</div>
+            </div>
+           </div>
+
+
+           
+        </section>
+
+        <section id="footer">
+          <div class="main-footer">
+            <div class="logoinfo" data-aos="fade-up">
+             
+        
+              <div class="contact-details">
+                <h1>Contact Us</h1>
+                <li>
+                  <div class="fa fa-phone"></div><a href="tel:+917548882167">+91 7548882167</a></li>
+                <li>
+                  <div class="fa fa-envelope"></div><a href="mailto:mrprogrammer11022002@gmail.com">mrprogrammer11022002@gmail.com</a></li>
+                </li>
+            </div>
+          </div>
+         
+         
+          </div>
+        <footer>Copyright ©2022 All rights reserved | Developed  by <a href="https://instagram.com/_mr._programmer_" target="_blank">Mr.Programmer</a></footer>
+        </section>
+
   </body>
-
- 
 </html>
