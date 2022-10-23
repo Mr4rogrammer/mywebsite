@@ -172,12 +172,16 @@ body {
 }
 
 .centerFlex {
-
+marker-start: 5px;
+marker-end: 5px;
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
+.downloadaar{
+    margin-bottom: 15px;
+}
 
 
 .webBtn {
@@ -374,11 +378,6 @@ table {
 
 
 @media (max-width: 800px) {
-    .pre {
-        font-size: 5px;
-    }
-
-
     .Grid3x {
 
         margin-top: -90px;
