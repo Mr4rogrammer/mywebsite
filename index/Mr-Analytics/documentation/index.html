@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MrAnalytics Documentation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/MrAnalytics.css" rel="stylesheet" />
+  </head>
+
+
+  <body>
+    <div class="MainClass">
+      <div class="MainNav">
+        <div class="Nav">
+          <div class="TopNav">
+            <p class="Title">Mr.Analytics</p>
+            <p class="byTag">by Mr.Programmer</p>
+          </div>
+        </div>
+        <div>
+          <p class="BuildBetterApps">Build Better Apps,Faster.</p>
+          <p class="BuildMessage">
+            MrAnalytics is a fast, real-time exception handler for android
+            application and updates in both web and app-based dashboard.
+          </p>
+          <div class="centerFlex">
+          
+            <a href="https://play.google.com/store/apps/details?id=com.mrprogrammer.analytics" target="_blank" class="webBtn">Android App</a>
+          </div>
+          <br /><br />
+        </div>
+        <div class="custom-shape-divider-top-1664679849">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+      <section>
+      <div class="Content">
+      
+          <p class="whyMr">why use Mr.Analytics?</p>
+          <div class="Grid3x">
+            <div class="GridChild1x">
+              <div class="GridChildinner">
+                <img class="GridChildicon" src="icon/tick.png" />
+                <p class="GridChildTitle">Fast and lightweight</p>
+              </div>
+              <div class="GridContentDiv">
+                <p class="text">
+                  Handle every exception without missing any one of them.
+                </p>
+              </div>
+            </div>
+            <div class="GridChild1x">
+              <div class="GridChildinner">
+                <img class="GridChildicon" src="icon/tick.png" />
+                <p class="GridChildTitle">Multiple DashBoard</p>
+              </div>
+              <div class="GridContentDiv">
+                <div class="GridContentDiv">
+                  <p class="text">
+                    Get a dashboard on Android based application and soon web based application will be released.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="GridChild1x">
+              <div class="GridChildinner">
+                <img class="GridChildicon" src="icon/tick.png" />
+                <p class="GridChildTitle">Built-in mobile to cloud sync</p>
+              </div>
+              <div class="GridContentDiv">
+                <div class="GridContentDiv">
+                  <p class="text">
+                    Get updates of each and every exception in less than a sec
+                    in the dashboard.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        
+       
+   
+
+        <section >
+
+              <div class="documation">~ Documentation ~</div>
+
+          <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Add below code in project level build.gradle</p>
+             <div class="pre"> allprojects {<br/>&nbsp;repositories {<br/>
+              &nbsp;&nbsp; google()<br/>
+              &nbsp;&nbsp; mavenCentral()<br/>
+              &nbsp;&nbsp; maven { url 'https://jitpack.io' }<br/>
+              &nbsp; }<br/>
+          }</div>
+            </div>
+             
+           </div>
+
+          <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Initialization of Library in build.gradle</p>
+             <div class="pre">implementation 'com.github.krish11022002:Mr.Analytics:V3.0.0'</div>
+             <p class="codetext">Initialization of Library using AAR file</p>
+             <div class="downloadaar" > <a href="/lib/MrAnalytics.aar" class="webBtn" download>Download AAR</a></div>
+             <div class="pre"> Copy and Past MrAnalytics.aar into Libs folder in Project level</div>
+             <div class="pre">dependencies {<br/>
+              &nbsp;&nbsp;implementation files('libs/MrAnalytics.aar');<br/>
+            }</div>
+            <div class="pre">Sync the Project</div>
+            </div>
+             
+           </div>
+
+          <div class="codeblock">
+           <div class="codecopy">
+           
+            <p class="codetext">Initialization of the MrAnalytics class with email and key from dashboard. (in MainApplication)</p>
+            <div class="pre">class MainApplication : Application() {<br/>
+              &nbsp;override fun onCreate() {<br/>
+                &nbsp;&nbsp; super.onCreate()<br/>
+                &nbsp;&nbsp;&nbsp; MrAnalytics.init(applicationContext, "testmail@gmail.com", "202212215");<br/>
+                &nbsp;&nbsp; }<br/>
+          }</div>
+           </div>
+            
+          </div>
+
+
+    
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Use the InBuild function to Handle overall application exception. (in MainApplication)</p>
+             <div class="pre">class MainApplication : Application() {<br/>
+              &nbsp;override fun onCreate() {<br/>
+                &nbsp;&nbsp; super.onCreate()<br/>
+                &nbsp;&nbsp;&nbsp; MrAnalytics.init(applicationContext, "testmail@gmail.com", "202212215");<br/>
+                &nbsp;&nbsp;&nbsp;  MrAnalytics.RunExceptionHandler();<br/>
+                &nbsp;&nbsp; }<br/>
+
+               
+          }</div>
+            </div>
+           </div>
+
+
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Use the InBuild function to Handle try catch exception. (in each file) 🤩</p>
+             <div class="pre">catch (e: Exception) {<br/> &nbsp;MrAnalytics.ReturnCatchError(e,this);<br/> }</div>
+            </div>
+           </div>
+
+
+
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Use the InBuild Handler to get the Result. (in each file) </p>
+             <div class="pre re1">class MainActivity : AppCompatActivity(),MrAnalytics.Handler{<br/>
+              &nbsp; override fun onSuccess(Message: String?) {<br/> &nbsp; &nbsp; &nbsp; TODO("Your Code here") <br/> &nbsp; &nbsp;}<br/>
+              &nbsp; override fun onFailure(e: String?) {<br/> &nbsp; &nbsp; &nbsp; TODO("Not yet implemented ") <br/> &nbsp; &nbsp;}<br/>
+            }</div>
+            </div>
+           </div>
+
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Festival doodles for your Application 🤩</p>
+             <div class="pre re1"> MrAnalytics.getFestival(new MrAnalytics.festivalHandler() {<br/>
+              &nbsp;override public void onSuccess(Response<FestivalData> response){<br/> &nbsp; &nbsp; &nbsp; TODO(" Your Code here") <br/> &nbsp; &nbsp;}<br/>
+              &nbsp;override public void onFestivalDateOver(String s, int ResultCode) {<br/> &nbsp; &nbsp; &nbsp; TODO("Not yet implemented ") <br/> &nbsp; &nbsp;}<br/>
+              &nbsp;override public void onFailure(String s, int ResultCode) {<br/> &nbsp; &nbsp; &nbsp; TODO("Not yet implemented ") <br/> &nbsp; &nbsp;}<br/>
+
+            }</div>
+            </div>
+           </div>
+
+
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Notification for your Application 🤩</p>
+             <div class="pre re1"> MrAnalytics.showNotification(R.drawable.ic_launcher_background,new MrAnalytics.Handler() {<br/>
+              &nbsp;override public void onSuccess(String Message){<br/> &nbsp; &nbsp; &nbsp; TODO("Your Code here") <br/> &nbsp; &nbsp;}<br/>
+              &nbsp;override public void onFailure(String e) {<br/> &nbsp; &nbsp; &nbsp; TODO("Not yet implemented ") <br/> &nbsp; &nbsp;}<br/>
+
+            }</div>
+            <div class="pre re1">Pass the notification icon as first parameter-argument</div>
+           </div>
+          </div>
+
+
+          <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Banner for your Application 🤩</p>
+             <div class="pre re1">  MrAnalytics.getBannerData(new MrAnalytics.bannerHandler() {<br/>
+              &nbsp;override public void onSuccess(Response<Banner> response){<br/> &nbsp; &nbsp; &nbsp; TODO(" Your Code here") <br/> &nbsp; &nbsp;}<br/>
+              &nbsp;override public void onDataNotFound(String s) {<br/> &nbsp; &nbsp; &nbsp; TODO("Not yet implemented ") <br/> &nbsp; &nbsp;}<br/>
+              &nbsp;override public void onFailure(String s) {<br/> &nbsp; &nbsp; &nbsp; TODO("Not yet implemented ") <br/> &nbsp; &nbsp;}<br/>
+
+            }</div>
+            </div>
+           </div>
+
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Check Update for your Application 🤩</p>
+             <div class="pre re1">   MrAnalytics.isUpdateAvailable(new MrAnalytics.updateHandler() <br/>
+              &nbsp;override public void onSuccess(String version,boolean isUpdate){<br/> &nbsp; &nbsp; &nbsp; TODO("Your Code here") <br/> &nbsp; &nbsp;}<br/>
+              &nbsp;override public void onFailure(String s) {<br/> &nbsp; &nbsp; &nbsp; TODO("Not yet implemented ") <br/> &nbsp; &nbsp;}<br/>
+
+            }</div>
+            </div>
+           </div>
+
+
+           <div class="codeblock">
+            <div class="codecopy">
+             <p class="codetext">Respone Code's</p>
+             <div class="pre re1">ResultCode : 0  > Failure.</div>
+             <div class="pre re1">ResultCode : 1  > Succesfully.</div>
+             <div class="pre re1">ResultCode : 2  > Invalid credentials.</div>
+             <div class="pre re1">ResultCode : 3  > API limit over.</div>
+            </div>
+           </div>
+
+
+           
+        </section>
+
+        <section id="footer">
+        <footer>Copyright ©2023 All rights reserved | Developed  by <a href="https://instagram.com/_mr._programmer_" target="_blank">Mr.Programmer</a></footer>
+        </section>
+
+  </body>
+</html>

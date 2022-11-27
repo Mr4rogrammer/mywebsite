@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+.MainClass {
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.Nav {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    padding: 1vh;
+}
+
+.MainNav {
+    color: white;
+    background-color: black;
+}
+
+.TopNav {
+    margin: 0;
+    padding: 10px;
+}
+
+.Title {
+    color: white;
+    margin-top: -5px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.byTag {
+    font-size: 12px;
+    color: white;
+    margin-top: -30px;
+    margin-left: 0;
+}
+
+.custom-shape-divider-top-1664679849 {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1664679849 svg {
+    position: relative;
+    display: block;
+    width: calc(108% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-top-1664679849 .shape-fill {
+    fill: #000000;
+}
+
+
+.BuildBetterApps {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.BuildMessage {
+    margin-top: -35px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.buttonDownload {
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #4CC713;
+    color: white;
+
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+}
+
+.buttonDownload:hover {
+    background-color: #333;
+    color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+
+    animation: downloadArrow 2s linear infinite;
+    animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+    border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+    border-top-color: #4CC713;
+    animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+
+    /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+    0% {
+        margin-top: -7px;
+        opacity: 1;
+    }
+
+    0.001% {
+        margin-top: -15px;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 0;
+    }
+}
+
+.centerFlex {
+marker-start: 5px;
+marker-end: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.downloadaar{
+    margin-bottom: 15px;
+}
+
+
+.webBtn {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    padding: 10px 25px;
+    margin-right: 10px;
+    background-color: #4CC713;
+    color: white;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.webBtn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.webBtn:before, .webBtn:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+
+}
+
+
+/* Download arrow shape */
+
+
+.webBtn:hover:before {
+    border-color: #4cc713;
+}
+
+
+.Content {
+    position: relative;
+    top: 10;
+    left: 0;
+    overflow: hidden;
+    line-height: 7;
+    width: 100%;
+}
+
+.whyMr {
+    margin-left: 35px;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Grid3x {
+
+    margin-top: -90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.GridChild1x {
+
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(222, 222, 222);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+}
+
+.GridChildinner {
+
+    margin: 10px;
+
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.GridChildicon {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
+
+.GridChildTitle {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: normal;
+}
+
+
+.text {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    line-height: normal;
+    max-height: none;
+    min-height: 0px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.Grid2x {
+
+    background-color: rgb(250, 250, 250);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+
+}
+
+
+
+.space {
+    height: 10vh;
+}
+
+
+
+
+
+
+
+
+.codeTitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titleDocumentation {
+
+    text-align: center;
+    line-height: normal;
+    max-height: none;
+    min-height: 0px;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+table {
+    margin-top: -250px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.textsubtitle {
+    text-align: center;
+    line-height: normal;
+    max-height: none;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.br {
+    display: block;
+    margin-bottom: -5em;
+}
+
+
+
+.text {
+    text-align: center;
+    line-height: normal;
+    max-height: none;
+
+}
+
+.text1 {
+
+
+    font-weight: 900;
+    margin-top: -50px;
+}
+
+.btmMargin {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .Grid3x {
+
+        margin-top: -90px;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .tab__pane {
+        text-align: start;
+        font-size: 10px;
+        margin-top: -40px;
+        display: none;
+
+    }
+
+
+    .code {
+        font-style: italic;
+        text-align: center;
+        line-height: normal;
+        max-height: none;
+        font-weight: 100;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 10px;
+    }
+
+}
+
+.codeblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
+
+.pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #4CC713;
+    color: rgb(0, 0, 0);
+    page-break-inside: avoid;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    overflow: auto;
+    width: 50vw;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.codecopy {
+    background-color: rgb(222, 222, 222);
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.1em;
+    width: 70vw;
+    border-radius: 5px;
+    justify-items: center;
+
+}
+
+.codetext{
+    text-align: start;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    font-weight: 900;
+}
+
+.documation{
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #19302E;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer h1 {
+  font-size: 22px;
+  line-height: 117%;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.main-footer h2 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.main-footer ul li a {
+  color: #ffffffcc;
+  text-decoration:none;
+}
+
+footer {
+  background-color: #19302E;
+  border-top: 1px solid #6EB981;
+  font-size: 17px;
+  padding: 15px 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logoinfo p {
+  color: #6EB981;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 749px) {
+  .main-footer {
+    padding:20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .info{
+      padding:20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-footer {
+    grid-template-columns: 1fr;
+  }
+  .sociallogos{
+    padding:20px 0;
+  }
+  .com{
+    padding:20px 0;
+  } 
+
+}
+
+.flex{
+    display: flex;
+}
